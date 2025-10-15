@@ -8,7 +8,7 @@ This repository contains:
 - 💡 **Resources**: Essential guides, references, and useful links.
 
 ## Tasks and Submission
-Access tasks and upload your submissions here: [GDG BNU Campus Backend Tasks Repository](https://github.com/ahmeddelattarr/GDG-BackEnd-Tasks.git)
+Access tasks and upload your submissions here: [GDG BNU Campus Backend Tasks Repository](https://github.com/shahdamohamed/GDG-Back-End-Tasks-Season-2)
 
 ## How to Contribute:
 1. Clone this repository:
