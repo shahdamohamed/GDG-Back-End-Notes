@@ -1,3 +1,37 @@
+# What Is the Internet vs the Web
+
+## Definition and Key Difference
+
+| Concept | Definition | Example |
+|----------|-------------|----------|
+| **Internet** | The **global network** of connected computers and devices that can communicate with each other. It’s the physical and virtual **infrastructure** — cables, routers, servers, satellites, etc. | Sending an email, using WhatsApp, or connecting to Wi-Fi all use the Internet. |
+| **Web (World Wide Web)** | A **service** that runs **on top of the Internet**, made up of websites and web pages linked together using **HTTP/HTTPS**. | Visiting `www.youtube.com` or `www.wikipedia.org` uses the Web. |
+
+---
+
+## Simple Explanation
+- The **Internet** is the **network itself** — the wires, routers, and data connections that link millions of computers worldwide.  
+- The **Web** (or **WWW**) is just **one of the services** that uses the Internet to send and receive data — specifically websites and web pages.
+
+> The Web **depends on the Internet**, but the Internet **can exist without the Web**.
+
+---
+
+## Example
+- Sending a **WhatsApp message** or playing an **online game** → uses the **Internet**, not the Web.  
+- Opening **www.google.com** → uses the **Web**, through your browser.
+
+---
+
+## How They Work Together
+1. You connect your device to the **Internet** (via Wi-Fi, mobile data, etc.).  
+2. You open a **browser** (like Chrome).  
+3. The browser uses **HTTP or HTTPS** to access information stored on **web servers**.  
+4. That’s how you access a website — through the **Web**, using the **Internet**.
+
+---
+
+
 # What is HTTP
 
 HTTP (Hypertext Transfer Protocol) is the foundational protocol used for transmitting data over the web. It allows communication between a client (like a web browser) and a server, enabling the transfer of web pages, images, videos, and other resources. Here's a breakdown of HTTP and how it is started.
