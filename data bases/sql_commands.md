@@ -77,20 +77,20 @@ VALUES
 ## ▶️ Select all rows from a table
 ```sql
 SELECT *
-FROM shahda1.employee_demographics;
+FROM employee_demographics;
 ```
 
 ## ▶️ Select specific columns + calculation
 (age + 10) * 10 is an expression.
 ```sql
 SELECT first_name, last_name, gender, age, (age + 10) * 10
-FROM shahda1.employee_demographics;
+FROM employee_demographics;
 ```
 
 ## ▶️ Select unique values only (DISTINCT)
 ```sql
 SELECT DISTINCT age 
-FROM shahda1.employee_demographics;
+FROM employee_demographics;
 ```
 
 # 3. WHERE Clause
@@ -99,13 +99,13 @@ FROM shahda1.employee_demographics;
 
 ```sql
 SELECT * 
-FROM shahda1.employee_salary
+FROM employee_salary
 WHERE salary > 20000;
 ```
 ## ▶️ Filter rows where gender is NOT male
 ```sql
 SELECT * 
-FROM shahda1.employee_demographics
+FROM employee_demographics
 WHERE gender != "male";
 ```
 
@@ -117,7 +117,7 @@ WHERE gender != "male";
 
 ```sql
 SELECT *
-FROM shahda1.employee_demographics
+FROM employee_demographics
 WHERE first_name LIKE "_a%";
 ```
 
@@ -127,14 +127,14 @@ WHERE first_name LIKE "_a%";
 
 ```sql 
 SELECT gender
-FROM shahda1.employee_demographics
+FROM employee_demographics
 GROUP BY gender;
 ```
 
 ## ▶️ Group by two columns: occupation + salary
 ```sql
 SELECT occupation, salary
-FROM shahda1.employee_salary
+FROM employee_salary
 GROUP BY occupation, salary;
 ```
 
@@ -144,7 +144,7 @@ GROUP BY occupation, salary;
 
 ```sql
 SELECT gender, MIN(age), MAX(age), COUNT(age), AVG(age)
-FROM shahda1.employee_demographics
+FROM employee_demographics
 GROUP BY gender
 ORDER BY gender;
 ```
@@ -152,14 +152,14 @@ ORDER BY gender;
 ## ▶️ Order rows by first_name descending
 ```sql 
 SELECT *
-FROM shahda1.employee_salary
+FROM employee_salary
 ORDER BY first_name DESC;
 ```
 
 ## ▶️ Order by column numbers (5 = gender, 4 = age)
 ```sql
 SELECT *
-FROM shahda1.employee_demographics
+FROM employee_demographics
 ORDER BY 5, 4;
 ```
 
@@ -168,7 +168,7 @@ ORDER BY 5, 4;
 ## ▶️ HAVING filters after GROUP BY (WHERE filters before grouping)
 ```sql
 SELECT occupation, AVG(salary)
-FROM shahda1.employee_salary
+FROM employee_salary
 WHERE occupation LIKE "web%"
 GROUP BY occupation
 HAVING AVG(salary) < 20000;
@@ -179,20 +179,20 @@ HAVING AVG(salary) < 20000;
 ## ▶️ Limit number of returned rows
 ```sql
 SELECT *
-FROM shahda1.employee_salary
+FROM employee_salary
 LIMIT 3;
 ```
 
 ## ▶️ Create alias (rename a column)
 ```sql
 SELECT first_name, salary * 12 AS "yearly salary"
-FROM shahda1.employee_salary;
+FROM employee_salary;
 ```
 # 7. JOINs
 ## ▶️ INNER JOIN: returns only matching rows in both tables
 ```sql
 SELECT *
-FROM shahda1.employee_demographics dem
+FROM employee_demographics dem
 INNER JOIN employee_salary sal
     ON dem.id = sal.ID;
 ```
@@ -200,7 +200,7 @@ INNER JOIN employee_salary sal
 ## ▶️ Selecting specific fields from a join
 ```sql
 SELECT dem.id, salary, age, dept_id
-FROM shahda1.employee_demographics dem
+FROM employee_demographics dem
 INNER JOIN employee_salary sal
     ON dem.id = sal.ID;
 ```
@@ -208,7 +208,7 @@ INNER JOIN employee_salary sal
 ## ▶️ RIGHT JOIN: returns all rows from right table + matches from left
 ```sql
 SELECT *
-FROM shahda1.employee_demographics
+FROM employee_demographics
 RIGHT JOIN employee_salary
     ON employee_demographics.id = employee_salary.ID;
 ```
